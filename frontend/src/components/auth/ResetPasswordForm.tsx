@@ -42,7 +42,7 @@ const ResetPasswordForm = ({ setView }: ResetPasswordFormProps) => {
   };
 
   return (
-    <Card className="p-6">
+    <Card className="p-6 font-serif">
       <h2 className="text-2xl font-bold mb-6 text-center">Reset Password</h2>
       <form onSubmit={handleResetPassword} className="space-y-4">
         <div className="space-y-2">

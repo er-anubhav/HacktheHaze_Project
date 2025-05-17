@@ -11,8 +11,8 @@ interface UrlInputProps {
 
 const UrlInput = ({ value, onChange, disabled = false }: UrlInputProps) => {
   return (
-    <div className="space-y-2">
-      <Label htmlFor="urls">Enter URLs to scrape (one per line or comma-separated)</Label>
+    <div className="space-y-2 font-serif">
+      <Label htmlFor="urls">Enter URL to scrape (one per line or comma-separated)</Label>
       <Textarea
         id="urls"
         placeholder="https://example.com
@@ -24,7 +24,7 @@ Or separate with commas: site1.com, site2.com"
         rows={5}
         className="w-full font-mono text-sm"
       />
-      <p className="text-xs text-gray-500">
+      <p className="text-sm text-gray-500">
         Enter complete URLs including http:// or https:// for best results
       </p>
     </div>

@@ -87,7 +87,7 @@ const ScrapeHistory = () => {
   return (
     <Card className="overflow-hidden">
       <div className="p-4 border-b">
-        <h2 className="text-xl font-semibold">Scrape History</h2>
+        <p className="text-md">Scrape History</p>
       </div>
       <div className="overflow-x-auto">
         <Table>

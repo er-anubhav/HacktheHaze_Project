@@ -15,8 +15,8 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-sm">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold flex items-center text-blue-600">
+      <div className="container font-serif mx-auto px-4 py-4 flex justify-between items-center">
+        <Link to="/" className="text-xl flex items-center text-black">
           <ImageIcon className="mr-2" />
           <span>Hack The Haze</span>
         </Link>

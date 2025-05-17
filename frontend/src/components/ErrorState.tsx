@@ -9,7 +9,7 @@ interface ErrorStateProps {
 
 const ErrorState = ({ message }: ErrorStateProps) => {
   return (
-    <Card className="p-12 flex flex-col items-center justify-center text-center">
+    <Card className="p-12 font-serif flex flex-col items-center justify-center text-center">
       <div className="bg-red-100 p-4 rounded-full mb-4">
         <X className="h-8 w-8 text-red-500" />
       </div>

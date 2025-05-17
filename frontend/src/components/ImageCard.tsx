@@ -14,7 +14,7 @@ const ImageCard = ({ imageUrl }: ImageCardProps) => {
   const [hasError, setHasError] = useState(false);
 
   return (
-    <Card className="overflow-hidden flex flex-col">
+    <Card className="overflow-hidden font-serif flex flex-col">
       <div className="relative h-40 bg-gray-100">
         {isLoading && !hasError && (
           <div className="absolute inset-0 flex items-center justify-center">

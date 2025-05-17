@@ -55,7 +55,7 @@ const SignupForm = ({ setView }: SignupFormProps) => {
   };
 
   return (
-    <Card className="p-6">
+    <Card className="p-6 font-serif">
       <h2 className="text-2xl font-bold mb-6 text-center">Create an Account</h2>
       <form onSubmit={handleSignup} className="space-y-4">
         <div className="space-y-2">

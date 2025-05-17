@@ -43,8 +43,8 @@ const LoginForm = ({ setView }: LoginFormProps) => {
   };
 
   return (
-    <Card className="p-6">
-      <h2 className="text-2xl font-bold mb-6 text-center">Log In</h2>
+    <Card className="p-6 font-serif">
+      <h2 className="text-2xl mb-6 text-center">Log In</h2>
       <form onSubmit={handleLogin} className="space-y-4">
         <div className="space-y-2">
           <label htmlFor="email" className="block text-sm font-medium">
@@ -83,7 +83,7 @@ const LoginForm = ({ setView }: LoginFormProps) => {
         <div className="flex justify-between text-sm mt-4">
           <button
             type="button"
-            className="text-blue-600 hover:underline"
+            className="text-black hover:underline"
             onClick={() => setView('signup')}
             disabled={isLoading}
           >
@@ -92,7 +92,7 @@ const LoginForm = ({ setView }: LoginFormProps) => {
           
           <button
             type="button"
-            className="text-blue-600 hover:underline"
+            className="text-black hover:underline"
             onClick={() => setView('reset')}
             disabled={isLoading}
           >

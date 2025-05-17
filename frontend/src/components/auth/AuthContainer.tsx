@@ -8,7 +8,7 @@ const AuthContainer = () => {
   const [view, setView] = useState<'login' | 'signup' | 'reset'>('login');
 
   return (
-    <div className="max-w-md mx-auto mt-8">
+    <div className="max-w-md font-serif mx-auto mt-8">
       {view === 'login' && <LoginForm setView={setView} />}
       {view === 'signup' && <SignupForm setView={setView} />}
       {view === 'reset' && <ResetPasswordForm setView={setView} />}

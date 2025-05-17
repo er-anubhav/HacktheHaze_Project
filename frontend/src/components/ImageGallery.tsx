@@ -14,7 +14,7 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
   
   return (
     <div className="space-y-4">
-      <div className="flex justify-between items-center">
+      <div className="flex font-serif justify-between items-center">
         <h2 className="text-2xl font-bold">
           {images.length} {images.length === 1 ? "Image" : "Images"} Found
         </h2>
