@@ -1,0 +1,9 @@
+{
+  "name": "hackthehaze-backend",
+  "version": "1.0.0",
+  "description": "Backend API for HacktheHaze Image Scraper",
+  "scripts": {
+    "start": "python main.py",
+    "dev": "python main.py"
+  }
+}

@@ -1,192 +1,71 @@
+# HacktheHaze Project
 
-# 🕸️ Hack The Haze – Fullstack Image Scraper Starter
+A web application that scrapes images from websites, built with a FastAPI backend and React frontend.
 
-Welcome to the official starter repository for **Hack The Haze – Theme 2**  
-🌐 *Fullstack Web App to Scrape Images from URLs*
+## Project Structure
 
-Hosted by [brainfogdev](https://github.com/brainfogdev)
+- `backend/`: FastAPI backend for image scraping
+- `frontend/`: React frontend built with Vite and Shadcn UI
 
----
+## Setup Instructions
 
-## 📌 Problem Statement
+### Backend Setup
 
-> Create a fullstack web application that accepts one or multiple URLs from users, scrapes those web pages, and returns all the image links found.
+1. Navigate to the backend directory:
+   ```
+   cd backend
+   ```
 
----
+2. Create and activate a virtual environment (recommended):
+   ```powershell
+   python -m venv venv
+   .\venv\Scripts\activate
+   ```
 
-## ✅ Requirements
+3. Install the required packages:
+   ```powershell
+   pip install -r requirements.txt
+   ```
 
-### 🎯 Frontend (React)
+4. Run the FastAPI server:
+   ```powershell
+   python main.py
+   ```
 
-- Input field to enter one or multiple URLs (comma-separated or multiline)
-- Display all image results in a responsive grid or layout
-- Handle:
-  - Loading state
-  - Error state
-  - Empty/no images
-- Clean, simple UX
+   The backend API will be available at http://localhost:8000
 
-### 🛠️ Backend (Python or Node.js)
+### Frontend Setup
 
-- Accept URLs from the frontend
-- Scrape each web page
-- Return image links as JSON
-- Handle:
-  - Invalid or unreachable URLs
-  - Duplicate image filtering (optional)
+1. Navigate to the frontend directory:
+   ```powershell
+   cd frontend
+   ```
 
-### 📊 Optional Features
+2. Install dependencies:
+   ```powershell
+   npm install
+   # or if you have bun installed:
+   # bun install
+   ```
 
-- URL validation and normalization
-- Image caching
-- History storage using SQLite/PostgreSQL
-- Pagination or lazy-loading
-- User authentication
+3. Start the development server:
+   ```powershell
+   npm run dev
+   # or with bun:
+   # bun run dev
+   ```
 
----
+   The frontend will be available at http://localhost:5173
 
-## 🧰 Preferred Stack
+## API Endpoints
 
-- **Frontend**: React.js (JavaScript or TypeScript)
-- **Backend**: 
-  - Python (Flask or FastAPI) **or**  
-  - Node.js (Express)
-- **Optional DB**: SQLite / PostgreSQL
-- **Optional Deployments**:
-  - Frontend: Vercel / Netlify
-  - Backend: Render / Railway
+- `POST /scrape` - Scrape images from provided URLs
+  - Request body: `{ "urls": ["https://example.com", ...] }`
+  - Response: `{ "results": { "url": ["image_url1", ...] }, "errors": [] }`
 
----
+## Environment Configuration
 
-## 📁 Suggested Folder Structure
+The frontend connects to the backend API using the URL specified in the `.env` file.
+The default configuration assumes the backend is running at http://localhost:8000.
 
-```
-
-hackthehaze-fullstack-image-scraper/
-├── client/              # Frontend (React.js)
-│   ├── src/
-│   └── public/
-├── server/              # Backend (Node.js or Python)
-│   ├── routes/
-│   └── utils/
-├── README.md
-└── THOUGHTS.md
-
-````
-
----
-
-## 🏁 Getting Started
-
-### 1. Clone the Repo
-```bash
-git clone https://github.com/brainfogdev/hackthehaze-fullstack-image-scraper.git
-cd hackthehaze-fullstack-image-scraper
-````
-
----
-
-### 2. Setup Frontend
-
-```bash
-cd client
-npm install
-npm start
-```
-
----
-
-### 3. Setup Backend (Choose One)
-
-#### ▶️ Node.js (Express)
-
-```bash
-cd server
-npm install
-npm run dev
-```
-
-#### 🐍 Python (Flask/FastAPI)
-
-```bash
-cd server
-pip install -r requirements.txt
-uvicorn main:app --reload
-```
-
----
-
-## 📝 Submission Guidelines
-
-Ready to launch your scraper? Follow these steps to submit your project:
-
----
-
-### 1️⃣ **Fork This Repo**
-
-> Click the **Fork** button to create your copy. Then clone and start building.
-
----
-
-### 2️⃣ **Build Your Solution**
-
-Finish the frontend + backend. Make it robust, clean, and beautiful.
-
----
-
-### 3️⃣ **Include the Following Files**
-
-📄 `README.md`
-
-* Project overview
-* Tech stack
-* Setup instructions
-* Screenshots or demo GIFs (recommended!)
-
-🧠 `THOUGHTS.md`
-
-* Your approach & logic
-* Challenges and solutions
-* Improvements you'd add with more time
-
----
-
-### 4️⃣ (Optional) Deploy Your Project
-
-* Deploy frontend (Vercel/Netlify)
-* Deploy backend (Render/Railway)
-* Paste the live links in your README
-
----
-
-### 5️⃣ **Submit on Unstop**
-
-Submit the following on the [Unstop Hackathon Portal](https://unstop.com):
-
-* 🔗 GitHub repository URL
-* 🔗 Live deployed links (if available)
-
----
-
-## 💡 Tips to Win
-
-* Handle messy, real-world inputs cleanly
-* Scrape efficiently and responsibly
-* Design a beautiful frontend
-* Validate URLs and give great feedback to users
-* Impress us with extras like caching or DB history!
-
----
-
-## 🤝 Need Help?
-
-Stuck? Reach out to the organizing team or open an [Issue](https://github.com/brainfogdev/hackthehaze-fullstack-image-scraper/issues).
-
----
-
-## 🏆 Build Smart. Scrape Clean. Stand Out.
-
-This isn't just another CRUD app — it's your chance to build a **useful, fullstack utility with real-world impact.**
-Impress the judges and **hack the haze**! 🕸️⚡🖼️
-
-
+If you need to change the backend URL, modify the `VITE_API_URL` variable in the `.env` file.

@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: hackthehaze-api
+    env: python
+    region: ohio  # Choose the appropriate region for your users
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0  # Choose an appropriate Python version
+      - key: ALLOW_ALL_ORIGINS
+        value: false
+      - key: FRONTEND_URL
+        # Update this URL after deploying your frontend to Vercel
+        value: https://hackthehaze.vercel.app
+    autoDeploy: true
