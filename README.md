@@ -44,7 +44,7 @@ Perfect for researchers, designers, content creators, and anyone needing to coll
 ![Home Page](https://raw.githubusercontent.com/er-anubhav/hackthehaze/main/screenshots/home-page.png)
 
 ### Scrape History
-![Scrape History](https://raw.githubusercontent.com/er-anubhav/hackthehaze/main/screenshots/scrape-history.png)
+![Scrape History](https://github.com/er-anubhav/HacktheHaze_Project/blob/main/screenshots/scrape-history.png)
 
 ## Project Structure
 
