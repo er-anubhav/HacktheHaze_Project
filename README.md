@@ -125,10 +125,6 @@ For detailed deployment instructions, see the [DEPLOYMENT.md](./DEPLOYMENT.md) f
 
 If you encounter any issues, refer to the [TROUBLESHOOTING.md](./TROUBLESHOOTING.md) file for solutions to common problems.
 
-## Demo GIF
-
-![HacktheHaze Demo](https://raw.githubusercontent.com/yourusername/hackthehaze/main/screenshots/demo.gif)
-<!-- Replace with actual demo GIF once available -->
 
 ## Features
 
