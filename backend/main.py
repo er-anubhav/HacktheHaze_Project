@@ -20,9 +20,7 @@ default_origins = [
     "http://localhost:3000",  # Another common development port
     "http://127.0.0.1:5173",
     "http://127.0.0.1:8080", 
-    "http://127.0.0.1:3000",
-    # Production origins - update with your actual Vercel domain when deployed
-    "https://hackthehaze.vercel.app",
+    "http://127.0.0.1:3000",    # Production origins - actual Vercel domain
     "https://hackthehaze-project.vercel.app",
 ]
 

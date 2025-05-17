@@ -2,6 +2,11 @@
 
 A web application that scrapes images from websites, built with a FastAPI backend and React frontend.
 
+## Live Demo
+
+- **Frontend:** [https://hackthehaze-project.vercel.app/](https://hackthehaze-project.vercel.app/)
+- **Backend API:** [https://hackthehaze-project.onrender.com](https://hackthehaze-project.onrender.com)
+
 ## Project Structure
 
 - `backend/`: FastAPI backend for image scraping
@@ -69,3 +74,14 @@ The frontend connects to the backend API using the URL specified in the `.env` f
 The default configuration assumes the backend is running at http://localhost:8000.
 
 If you need to change the backend URL, modify the `VITE_API_URL` variable in the `.env` file.
+
+## Deployment
+
+This project is deployed with:
+
+- Frontend hosted on [Vercel](https://vercel.com)
+- Backend hosted on [Render](https://render.com)
+
+For detailed deployment instructions, see the [DEPLOYMENT.md](./DEPLOYMENT.md) file.
+
+If you encounter any issues, refer to the [TROUBLESHOOTING.md](./TROUBLESHOOTING.md) file for solutions to common problems.
